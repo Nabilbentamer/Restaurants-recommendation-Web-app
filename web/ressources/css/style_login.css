@@ -1,0 +1,153 @@
+@import url(fonts.css);
+
+/*--------------- Global Classes ------------------ */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+:root {
+  /*             Theme color            */
+
+  --main-color: #fca311;
+  /*              Ingredient color              */
+
+  /*------------------------ Nav Bar ------------------------- */
+}
+.nav {
+  padding: 0.5rem 2rem;
+  background-color: var(--main-color);
+}
+.nav .nav-brand {
+  font-size: 1.6rem;
+  display: block;
+  font-family: vegan;
+  color: white;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav-items {
+  display: flex;
+  margin: 5px;
+}
+
+.nav .nav-items .nav-link {
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.nav ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: white;
+  margin: auto;
+  display: block;
+  transition: 0.5;
+}
+.nav ul li:hover::after {
+  width: 100%;
+}
+
+.nav .social {
+  padding: 0.7rem 0rem;
+}
+
+.nav .social i {
+  padding: 0rem 0.2rem;
+}
+
+.nav .social i:hover {
+  color: #a1c4cf;
+}
+
+/*---------------xx--------- Nav Bar -------------xx------------ */
+
+/*------------------------ Image and content ------------------------- */
+/*
+section {
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}*/
+
+.login {
+  display: flex;
+  justify-content: space-around;
+}
+
+.border {
+  height: 2px;
+  background-color: var(--main-color);
+  width: 60px;
+  margin: auto;
+}
+.login-wrap {
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 100px;
+  padding: 15px;
+}
+
+.login-wrap a {
+  color: black;
+}
+
+.login-wrap a:hover {
+  color: var(--main-color);
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+}
+input[type="text"] {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 5px 20px;
+}
+h2 {
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-family: vegan;
+}
+h4 {
+  font-family: nova;
+}
+
+input[type="submit"] {
+  font-size: 16px;
+  padding: 5px;
+  background-color: var(--main-color);
+}
+
+.image-back {
+  margin-right: 100px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.image-back img {
+  border-radius: 70%;
+  width: 400px;
+  height: 300px;
+}

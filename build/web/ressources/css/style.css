@@ -1,0 +1,281 @@
+@import url(fonts.css);
+
+/*--------------- Global Classes ------------------ */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+:root {
+  /*             Theme color            */
+
+  --main-color: #fca311;
+  /*              Ingredient color              */
+
+  /*------------------------ Nav Bar ------------------------- */
+}
+.nav {
+  padding: 1rem 2rem;
+}
+.nav .nav-brand {
+  font-size: 1.6rem;
+  display: block;
+  font-family: vegan;
+  color: white;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav-items {
+  display: flex;
+  margin: 5px;
+}
+
+.nav .nav-items .nav-link {
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.nav ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: white;
+  margin: auto;
+  display: block;
+  transition: 0.5;
+}
+.nav ul li:hover::after {
+  width: 100%;
+}
+
+.nav .social {
+  padding: 0.7rem 0rem;
+}
+
+.nav .social i {
+  padding: 0rem 0.2rem;
+}
+
+.nav .social i:hover {
+  color: #a1c4cf;
+}
+
+/*---------------xx--------- Nav Bar -------------xx------------ */
+
+/*------------------------ Image and content ------------------------- */
+
+section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url('../images/casablanca.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h2 {
+  color: #fca311;
+  letter-spacing: 2px;
+  font-size: 45px;
+  width: 60%;
+  font-family: nova, cursive;
+  margin-top: 100px;
+}
+.bttn {
+  margin-top: 20px;
+  padding: 0.7rem 1rem;
+  border-radius: 0.2rem;
+  font-weight: 600;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+  width: 130px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  margin-left: 4px;
+}
+
+.bttn:hover {
+  background-color: #fca311;
+  border: none;
+  color: black;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.form-wrap {
+  background-color: #fca311;
+  width: 300px;
+  position: absolute;
+  right: 60px;
+  top: 150px;
+  border-radius: 10px;
+}
+.form-wrap h3 {
+  color: black;
+  font-family: nova;
+  text-align: center;
+  font-size: 18px;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px 0px;
+  box-sizing: border-box;
+}
+
+.form-wrap input {
+  width: 90%;
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  color: black;
+}
+input[type="button"] {
+  width: 50%;
+  background-color: #fca311;
+  font-size: 15px;
+  font-family: sans-serif;
+  border: none;
+  color: black;
+}
+
+.button-chercher {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+/*-------------xx----------- Image and content -------------xx------------ */
+
+/*---------------------------- Reviews Part ---------------------------------*/
+
+.Reviews {
+  padding: 40px 0;
+  background-color: #bbb1b18c;
+  text-align: center;
+  color: #434343;
+}
+
+.inner {
+  max-width: 1400px;
+}
+
+.border {
+  width: 160px;
+  height: 5px;
+  background-color: var(--main-color);
+  margin: 26px auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+.col {
+  flex: 33.33%;
+  max-width: 23.33%;
+  box-sizing: border-box;
+  padding: 15px;
+  margin: auto;
+}
+.review {
+  background-color: white;
+  padding: 30px;
+}
+.review img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 50px;
+}
+
+.name {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0px 0px 40px 0px;
+  text-align: center;
+}
+
+.stars {
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  .col {
+    flex: 100%;
+    max-width: 80%;
+  }
+}
+
+.categories {
+  padding: 40px 0;
+  background-color: white;
+  text-align: center;
+  color: #434343;
+}
+.category-title {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*
+.category {
+  /*background-color: var(--main-color);
+  /*border: 5px solid black;*/
+/*margin: 94px;
+  background-color: var(--main-color);*/
+/*max-width: 55%;*/
+
+.category img {
+  width: 250px;
+  height: 300px;
+}
+.col1 {
+  box-sizing: border-box;
+  flex: 20%;
+}
+
+.row1 {
+  display: none;
+}
+.categories button {
+  margin-top: 20px;
+}
+.button-show {
+  font-size: 16px;
+  font-family: sans-serif;
+  padding: 5px;
+  width: 150px;
+  background-color: var(--main-color);
+  color: black;
+}
+
+/*---------------xx------------- Reviews Part ----------------xx-----------------*/

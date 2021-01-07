@@ -1,0 +1,15 @@
+@font-face {
+  font-family: playfair;
+  src: url('fonts/PlayfairDisplay-Medium.ttf');
+}
+
+@font-face {
+  font-family: vegan;
+  src: url('fonts/VeganStylePersonalUse-5Y58.ttf');
+  
+}
+
+@font-face {
+  font-family: nova;
+  src: url(NovaRound-Regular.ttf);
+}
