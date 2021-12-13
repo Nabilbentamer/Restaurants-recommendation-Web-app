@@ -7,6 +7,7 @@ package com.foodie.servlets;
 
 import com.foodie.beans.Member;
 import com.foodie.db.MemberDao;
+import static com.sun.corba.se.spi.presentation.rmi.StubAdapter.request;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -20,6 +21,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -84,6 +86,7 @@ public class login extends HttpServlet {
             String uname= request.getParameter("uname");
             String email = request.getParameter("email");
             String password = request.getParameter("password");
+
             
           
             
@@ -91,12 +94,24 @@ public class login extends HttpServlet {
             Member member= new Member(uname,email,password);
             MemberDao MemDao = new MemberDao();
             String result = MemDao.insert(member);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
-            dispatcher.forward(request, response);
-            } catch (SQLException | ClassNotFoundException | IllegalAccessException | InstantiationException ex) {
+            
+              HttpSession session = request.getSession();
+              session.setAttribute("name",member.getUname());
+              session.setAttribute("email", member.getEmail());
+              session.setAttribute("id",member.getId());
+              RequestDispatcher dispatcher = request.getRequestDispatcher("CompleteProfile.jsp");
+              dispatcher.forward(request, response);
+              
+              
+              
+          } catch (SQLException | ClassNotFoundException | IllegalAccessException | InstantiationException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
-            }       
-    }
+        }
+            ;
+            
+            }
+            
+    
 
 
     @Override

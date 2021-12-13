@@ -1,0 +1,237 @@
+/* Basic Styling 
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+*/
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif&display=swap");
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+/* Columns */
+.left-column {
+  width: 65%;
+  position: relative;
+}
+
+.right-column {
+  width: 35%;
+  margin-top: 60px;
+}
+
+/* Left Column */
+.left-column img {
+  width: 90%;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  transition: all 0.3s ease;
+}
+
+/* Right Column */
+
+/* Product Description */
+.Restaurant-description {
+  border-bottom: 1px solid #e1e8ee;
+  margin-bottom: 20px;
+}
+.Restaurant-description span {
+  font-size: 12px;
+  color: #358ed7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.Restaurant-description h1 {
+  font-weight: 300;
+  font-size: 52px;
+  color: #43484d;
+  letter-spacing: -2px;
+}
+.Restaurant-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939e;
+  line-height: 24px;
+}
+
+/* Product Configuration */
+.Price-range span,
+.Rating-reviews-container span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #86939e;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.Price-range {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 50px;
+}
+
+.Price div {
+  display: inline-block;
+}
+
+.Rating-buttons button {
+  border: 2px solid #e1e8ee;
+  border-radius: 6px;
+  padding: 13px 20px;
+  font-size: 14px;
+  color: #5e6977;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.Rating-buttons button:hover,
+.Rating-buttons button:active,
+.Rating-buttons button:focus {
+  border: 2px solid #86939e;
+  outline: none;
+}
+
+.Rating-reviews-container {
+  border-bottom: 1px solid #e1e8ee;
+  margin-bottom: 20px;
+}
+
+.cart-btn {
+  display: inline-block;
+  background-color: #7dc855;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 30px;
+  transition: all 0.5s;
+}
+.cart-btn:hover {
+  background-color: #64af3d;
+}
+
+.user-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* --------------------- Review Section -------------------------------- */
+.reviews-section {
+  width: 800px;
+  height: calc(100% - 300px);
+  margin-top: 30px;
+  background-color: #f2f2f2;
+  margin-left: 0px;
+  padding-left: 0px;
+  padding: 20px 60px;
+}
+.review-one {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.reviews-section-container {
+  background-color: #f2f2f2;
+  margin: 0%;
+  padding: 0%;
+}
+.profile-image {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 28px;
+}
+
+.profile-image .review-number {
+  margin-top: -10px;
+  font-size: 12px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.review-one .profile-name {
+  font-size: 13px;
+  font-family: "PT Sans", sans-serif;
+}
+.review-one {
+  padding: 15px 50px;
+  display: flex;
+  position: relative;
+}
+
+.date-stars-section i {
+  color: lawngreen;
+}
+
+.profile-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.date-stars-section {
+  display: flex;
+}
+
+.Review-date {
+  margin-top: 0px;
+  margin-left: 5px;
+  font-size: 12px;
+  font-family: "Bree Serif";
+}
+
+.review-content h3 {
+  margin-top: 0;
+  font-family: "Poppins";
+  font-size: 17px;
+}
+
+.review-content p {
+  font-family: "Bree Serif";
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  color: grey;
+}
+.border-separator {
+  height: 2px;
+  width: 90%;
+  background-color: black;
+  margin: auto;
+}
+
+.box-rating-1 {
+  border: 1px solid black;
+  width: 50%;
+}
+
+.box-rating-2 {
+  border: 1px solid black;
+  width: 50%;
+}
+.box-container {
+  display: flex;
+  column-gap: 5px;
+}
+
+.box {
+  font-family: sans-serif;
+  padding: 5px;
+  color: antiquewhite;
+  background-color: coral;
+}
+
+/*------------------xxx Review Section -----------xxx ------------------*/

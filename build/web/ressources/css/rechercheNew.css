@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url(./fonts.css);
+
+body {
+  padding: 0%;
+  margin: 0%;
+}
+
+/*--------------------------- Nav --------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  color: #fff;
+  background: rgb(252, 163, 17) !important;
+  padding: 5px 16px;
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 50px;
+}
+#navbarCollapse {
+  display: flex;
+  position: absolute;
+  right: 10px;
+}
+.navbar-brand {
+  font-family: vegan;
+}
+.navbar-nav {
+  justify-content: flex-end;
+}
+.nav-item {
+  display: inline-block;
+  position: relative;
+  font-family: "poppins";
+}
+.navbar img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar .navbar-brand {
+  color: #efe5ff;
+  padding-left: 0;
+  padding-right: 50px;
+  font-size: 24px;
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: #fff;
+}
+.navbar .navbar-brand i {
+  font-size: 25px;
+  margin-right: 5px;
+}
+.search-box {
+  position: relative;
+  top: 5px;
+  right: 350px;
+}
+.search-box input {
+  padding-right: 35px;
+  min-height: 38px;
+  border: none;
+  background: #faf7fd;
+  border-radius: 3px;
+}
+
+.search-box .input-group-addon {
+  min-width: 35px;
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 0;
+  z-index: 9;
+  padding: 10px 7px;
+  height: 100%;
+}
+.search-box i {
+  color: #a0a5b1;
+  font-size: 19px;
+}
+
+.navbar .nav-item i {
+  font-size: 18px;
+}
+.navbar .nav-item span {
+  position: relative;
+  top: 3px;
+}
+
+.navbar .nav-item span[class="user-name-profile"] {
+  top: -10px;
+}
+
+.navbar .navbar-nav > a {
+  color: #efe5ff;
+  padding: 8px 15px;
+  font-size: 14px;
+}
+.navbar .navbar-nav > a:hover,
+.navbar .navbar-nav > a:focus {
+  color: #fff;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
+}
+.navbar .navbar-nav > a > i {
+  display: block;
+  text-align: center;
+}
+.navbar .dropdown-item i {
+  font-size: 16px;
+  min-width: 22px;
+}
+.navbar .dropdown-item .material-icons {
+  font-size: 21px;
+  line-height: 16px;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+.navbar .dropdown-menu {
+  border-radius: 1px;
+  border-color: #e5e5e5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+.navbar .dropdown-menu a {
+  color: #777 !important;
+  padding: 8px 20px;
+  line-height: normal;
+  font-size: 15px;
+  display: block;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown a {
+  color: white;
+}
+
+.nav-item {
+  align-items: center;
+  justify-content: center;
+}
+/*---------------xxx---------------- Nav------------------xxx*/
+.container {
+  background-color: #f2f2f2;
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 1fr;
+  grid-template-rows: 0.2fr 2.1fr 0.3fr;
+  grid-template-areas: "nav nav nav " "sidebar main main" "footer footer footer";
+  /*grid-gap: 2rem;*/
+}
+
+.sidebar {
+  background-color: white;
+  grid-area: sidebar;
+  border: 0.5px solid lightgray;
+  margin-left: 60px;
+  width: 288px;
+}
+.wrapper {
+  margin-left: 10px;
+  padding: 10px;
+}
+.wrapper label {
+  font-size: 14px;
+  color: gray;
+  font-family: "poppins";
+}
+.title-restaurant-feature {
+  font-family: "Bree Serif";
+  font-size: 18px;
+  font-weight: bold;
+}
+.border-separtor {
+  content: "";
+  height: 2px;
+  background-color: gray;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+label {
+  font-family: "peppins", sans-serif;
+  font-weight: 500;
+  margin-left: 5px;
+}
+.input-label {
+  padding: 5px;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+input[type="checkbox"] {
+  height: 17px;
+  width: 17px;
+}
+
+label {
+  align-self: center;
+}
+.main {
+  background-color: white;
+  grid-area: main;
+  margin-right: 65px;
+}
+
+.footer {
+  grid-area: footer;
+}
+.text-description h4 {
+  font-family: "PT Sans";
+  font-size: 18px;
+}
+.restau-name a {
+  text-decoration: none;
+  color: black;
+}
+.row-restau {
+  border: 1px solid lightgray;
+  height: 210px;
+  display: flex;
+  margin-bottom: 5px;
+}
+.mainimg {
+  height: 210px;
+  width: 270px;
+}
+.desc #star {
+  color: #fca311;
+}
+.desc #star2 {
+  color: #fca311;
+  border-radius: 10%;
+}
+.text-description {
+  padding: 0px;
+}
+
+.reviews {
+  padding: 0px;
+}
+.border {
+  background-color: grey;
+  height: 1px;
+  width: 100%;
+  display: flex;
+}
+
+.main-review {
+  padding: 10px;
+  font-family: "Bree Serif";
+  font-size: 15px;
+  color: grey;
+  font-weight: 500;
+}
+.main-review .quotation {
+  color: black;
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.desc {
+  padding: 10px;
+  font-family: "PT Sans";
+}
+
+.price-range {
+  margin-left: 5px;
+}
+.stars {
+  margin-bottom: 10px;
+  margin-left: 5px;
+  color: #777;
+}
+h4 {
+  padding: 5px;
+  margin: 5px;
+}
+.comment-section .btn {
+  background: transparent;
+  border: none;
+  background-color: #fca311;
+  color: white;
+  padding: 10px;
+}
+
+.footer {
+  background-color: #26272b;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+.footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+.footer hr.small {
+  margin: 20px 0;
+}
+.footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+.footer a {
+  color: #737373;
+}
+.footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-links li {
+  display: block;
+}
+.footer-links a {
+  color: #737373;
+}
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links.inline li {
+  display: inline-block;
+}
+.footer .social-icons {
+  text-align: right;
+}
+.footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
+}
+.copyright-text {
+  margin: 0;
+}
+
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+.social-icons a {
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+.social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+.social-icons a.dribbble:hover {
+  background-color: #ea4c89;
+}
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+}
+.container-footer {
+  display: flex;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  font-family: "PT Sans";
+}
+
+.col-sm-12 {
+  width: 30%;
+  margin-left: 50px;
+}
+
+.col-xs-6 {
+  margin-right: 50px;
+  width: 20%;
+}
+
+.col-md-4 {
+  margin-left: 50px;
+}

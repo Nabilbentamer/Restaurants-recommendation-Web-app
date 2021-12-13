@@ -1,0 +1,126 @@
+@import url(../fonts.css);
+
+/*--------------- Global Classes ------------------ */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+:root {
+  /*             Theme color            */
+
+  --main-color: #fca311;
+  /*              Ingredient color              */
+
+  /*------------------------ Nav Bar ------------------------- */
+}
+.nav {
+  padding: 0.5rem 2rem;
+  background-color: var(--main-color);
+}
+.nav .nav-brand {
+  font-size: 1.6rem;
+  display: block;
+  font-family: vegan;
+  color: white;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav-items {
+  display: flex;
+  margin: 5px;
+}
+
+.nav .nav-items .nav-link {
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.nav ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: white;
+  margin: auto;
+  display: block;
+  transition: 0.5;
+}
+.nav ul li:hover::after {
+  width: 100%;
+}
+
+.nav .social {
+  padding: 0.7rem 0rem;
+}
+
+.nav .social i {
+  padding: 0rem 0.2rem;
+}
+
+.nav .social i:hover {
+  color: #a1c4cf;
+}
+
+/*--------------------- Admin Page Wrapper -------------------*/
+
+.admin-wrapper {
+  display: flex;
+  border: 1px solid black;
+  height: 560px;
+}
+.admin-wrapper .left-sidebar {
+  background-color: darkslategray;
+  flex: 2;
+}
+
+.admin-wrapper .admin-content {
+  background-color: cadetblue;
+  flex: 8;
+  padding: 40px 100px 100px;
+}
+
+.admin-wrapper .left-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.admin-wrapper .left-sidebar ul li a {
+  padding: 18px;
+  display: block;
+  border-bottom: 1px solid black;
+}
+.admin-wrapper .left-sidebar ul li a:hover {
+  background-color: coral;
+}
+
+/*-------------------------- Admin content ---------------------------- */
+
+.admin-content .page-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+
+
+
+/*--------------xxx----------- Admin content ---------xxx-----------------*/
+
+/*---------xxxx--------- Admin Page Wrapper ----------xxxx------------*/

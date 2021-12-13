@@ -66,15 +66,7 @@ body {
 }
 
 .nav .social {
-  padding: 0.7rem 0rem;
-}
-
-.nav .social i {
-  padding: 0rem 0.2rem;
-}
-
-.nav .social i:hover {
-  color: #a1c4cf;
+  padding: 0.2rem 0rem;
 }
 
 /*---------------xx--------- Nav Bar -------------xx------------ */
@@ -83,7 +75,7 @@ body {
 
 section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    url('../images/casablanca.jpg');
+    url(./images/casablanca.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -104,7 +96,6 @@ section {
   margin-top: 100px;
 }
 .bttn {
-  margin-top: 20px;
   padding: 0.7rem 1rem;
   border-radius: 0.2rem;
   font-weight: 600;
@@ -112,63 +103,24 @@ section {
   box-sizing: border-box;
   width: 130px;
   background-color: transparent;
-  color: white;
+  color: blue;
   border: 2px solid white;
   margin-left: 4px;
 }
 
 .bttn:hover {
-  background-color: #fca311;
+  background-color: white;
   border: none;
   color: black;
   cursor: pointer;
   transition: 0.2s;
 }
-.form-wrap {
-  background-color: #fca311;
-  width: 300px;
-  position: absolute;
-  right: 60px;
-  top: 150px;
-  border-radius: 10px;
-}
-.form-wrap h3 {
-  color: black;
-  font-family: nova;
-  text-align: center;
-  font-size: 18px;
-}
+/*---------------------------- Form submit ------------------------------- */
 
-.form-container {
-  background-color: white;
-  padding: 20px 0px;
-  box-sizing: border-box;
-}
 
-.form-wrap input {
-  width: 90%;
-  border-radius: 3px;
-  border: 1px solid black;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  color: black;
-}
-input[type="button"] {
-  width: 50%;
-  background-color: #fca311;
-  font-size: 15px;
-  font-family: sans-serif;
-  border: none;
-  color: black;
-}
 
-.button-chercher {
-  display: flex;
-  justify-content: center;
-  font-weight: 600;
-}
+/*--------------xx-------------- Form submit ---------------xx---------------- */
+
 /*-------------xx----------- Image and content -------------xx------------ */
 
 /*---------------------------- Reviews Part ---------------------------------*/
@@ -246,13 +198,6 @@ input[type="button"] {
   text-align: center;
   text-transform: uppercase;
 }
-/*
-.category {
-  /*background-color: var(--main-color);
-  /*border: 5px solid black;*/
-/*margin: 94px;
-  background-color: var(--main-color);*/
-/*max-width: 55%;*/
 
 .category img {
   width: 250px;

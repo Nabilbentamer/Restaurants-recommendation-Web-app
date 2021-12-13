@@ -10,6 +10,8 @@ import com.foodie.db.MemberDao;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.RequestDispatcher;
@@ -87,27 +89,23 @@ public class afterlogin extends HttpServlet {
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(afterlogin.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
+          // if the email or password are incorect stay at the same page but print something to warn the user
           if(member1==null){               
-                request.setAttribute("message","email or password is incorect");
-               
-                
+                request.setAttribute("message","email or password is incorect");                               
             }
-            else if(member1!=null){
-                /*HttpSession session = request.getSession();
-                destPage = "welcome.jsp";*/
-                response.getWriter().print("all is good");
-                destPage="signup.jsp";
-                
-            }
+          // if the user is an admin forwat to admin page 
+          else if("admin".equals(member1.getUname()) && "admin".equals(member1.getPassword())){              
+              destPage = "AdminPanel.jsp";
+
+          }
+          else{
+              destPage= "UserProfileNew.jsp";
+          }
+          // if it's a normal user forward to home page
+
             RequestDispatcher dispatcher = request.getRequestDispatcher(destPage);
             dispatcher.forward(request, response);
-
-            
-
-
-
-
-
 
     }
 

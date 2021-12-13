@@ -7,7 +7,7 @@
 
     <!------ Custom Style ------> 
     
-    <link rel="stylesheet" href="ressources/css/style.css"/>
+   <link rel="stylesheet" href="ressources/css/acceuil.css"/>
 
     <!----------- font awsome Icons -------->
 
@@ -15,8 +15,7 @@
 
 </head>
 
-
-    <body>
+<body>
 
 <section>
     <!--------------------- Navigation ------------------------>
@@ -49,13 +48,14 @@
 
             </div>
 
-                <div class="social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+            <div class="social">
+                    <a href="./signup.jsp"><button type="button" class="bttn">S'inscrire</button></a>
+                    <a href="./login.jsp"><button type="button" class="bttn">Se connecter</button></a>
+                    
 
                 </div>
+            
+
 
 
             
@@ -73,35 +73,20 @@
         <div >
             
             <h2>Découvrez les meilleurs restaurants à Casablanca</h2>
-            <a href="signup.jsp"><button type="button" class="bttn">S'inscrire</button></a>
-            <a href="login.jsp"><button type="button" class="bttn">Se connecter</button></a>
+
         </div>
     </div>
-        <div class="form-wrap">
-            
-            <h3>Où vous voulez manger?</h3>
-        
+    <!--
+    <form action="recherche" method="post" class="form-submit" style="display:flex; justify-content: center">
+        <input type="text" name="location">
+        <input type="submit" value="chercher">
+        </form>-->
+    
+        <form action="recherche" method="post" class="example form-wrap">
+        <input type="text" placeholder="Search.." name="location">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
 
-
-        <form class="form-container">
-            <!----
-            <label>Location: </label>
-            <select id="cars" name="cars">
-                <option value="ok">Anfa</option>
-                <option value="saab">Ain Sbaa</option>
-                <option value="fiat">Centre ville</option>
-                <option value="audi">Bernoussi</option>
-              </select>-->
-            <input type="text" name="location" placeholder="location">
-            <input type="text" name="location" placeholder="price range">
-            <input type="text" name="location" placeholder="type de cuisine">
-            <input type="text" name="location" placeholder="good for:business meetings, family">
-            <div class="button-chercher">
-            <input type="button" value="Chercher" >
-        </div>
-        </form>
-
-        </div>
     
 </section>
 
@@ -120,7 +105,6 @@
             <div class="col">
                 <div class="review">
                     <img src="ressources/images/portrait1.jpg" alt="">
-                    
                     <div class="name">Carla</div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -234,4 +218,5 @@
 
     
     </body>
+    
 </html>

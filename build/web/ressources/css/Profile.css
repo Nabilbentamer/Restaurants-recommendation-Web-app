@@ -1,0 +1,727 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url(../fonts.css);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #eeeeee;
+  font-family: "Varela Round", sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+.navbar {
+  color: #fff;
+  background: rgb(252, 163, 17) !important;
+  padding: 5px 16px;
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 50px;
+}
+#navbarCollapse {
+  display: flex;
+  position: absolute;
+  right: 10px;
+}
+.navbar-brand {
+  font-family: vegan;
+}
+.navbar-nav {
+  justify-content: flex-end;
+}
+.nav-item {
+  display: inline-block;
+  position: relative;
+  font-family: "poppins";
+}
+.navbar img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar .navbar-brand {
+  color: #efe5ff;
+  padding-left: 0;
+  padding-right: 50px;
+  font-size: 24px;
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: #fff;
+}
+.navbar .navbar-brand i {
+  font-size: 25px;
+  margin-right: 5px;
+}
+.search-box {
+  position: relative;
+  top: 5px;
+  right: 350px;
+}
+.search-box input {
+  padding-right: 35px;
+  min-height: 38px;
+  border: none;
+  background: #faf7fd;
+  border-radius: 3px;
+}
+
+.search-box .input-group-addon {
+  min-width: 35px;
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 0;
+  z-index: 9;
+  padding: 10px 7px;
+  height: 100%;
+}
+.search-box i {
+  color: #a0a5b1;
+  font-size: 19px;
+}
+
+.navbar .nav-item i {
+  font-size: 18px;
+}
+.navbar .nav-item span {
+  position: relative;
+  top: 3px;
+}
+
+.navbar .nav-item span[class="user-name-profile"] {
+  top: -10px;
+}
+
+.navbar .navbar-nav > a {
+  color: #efe5ff;
+  padding: 8px 15px;
+  font-size: 14px;
+}
+.navbar .navbar-nav > a:hover,
+.navbar .navbar-nav > a:focus {
+  color: #fff;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
+}
+.navbar .navbar-nav > a > i {
+  display: block;
+  text-align: center;
+}
+.navbar .dropdown-item i {
+  font-size: 16px;
+  min-width: 22px;
+}
+.navbar .dropdown-item .material-icons {
+  font-size: 21px;
+  line-height: 16px;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+.navbar .dropdown-menu {
+  border-radius: 1px;
+  border-color: #e5e5e5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+.navbar .dropdown-menu a {
+  color: #777 !important;
+  padding: 8px 20px;
+  line-height: normal;
+  font-size: 15px;
+  display: block;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown a {
+  color: white;
+}
+
+.nav-item {
+  align-items: center;
+  justify-content: center;
+}
+
+/*body {
+  padding-top: 90px;
+  margin: 0 100px;
+  background-color: #f2f2f2;
+}
+*/
+
+/*---------------------------- Container ----------------------------------- */
+.container {
+  padding-top: 40px;
+  margin: 0 100px;
+  background-color: #f2f2f2;
+}
+.profile-header {
+  height: 190px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  position: relative;
+}
+
+.profile-image-main {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+}
+
+.profile-image-main img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  /*position: absolute;
+  top: 20px;
+  left: 50px;*/
+}
+
+.profile-nav-info {
+  /*flex-direction: column;
+  justify-content: center;
+  /*padding-top: 20px;*/
+  width: 100%;
+  position: relative;
+}
+
+.profile-nav-info .adress {
+  color: #777;
+  display: flex;
+  font-weight: bold;
+  font-size: 0.8rem;
+  font-family: "Bree Serif";
+  position: absolute;
+  top: 35px;
+}
+.profile-nav-info .adress i {
+  margin-right: 8px;
+}
+.profile-nav-info .user-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: black;
+  font-family: sans-serif;
+}
+
+.user-statistic {
+  background-color: darkorange;
+}
+.list-items {
+  display: flex;
+  font-family: "Bree Serif";
+}
+
+.list-items li {
+  list-style: none;
+  margin-right: 60px;
+  font-size: 1.2rem;
+}
+
+.list2 {
+  position: absolute;
+  bottom: 2px;
+  left: -16px;
+}
+
+.list2 li {
+  margin-right: 120px;
+  color: grey;
+}
+
+.list1 {
+  position: absolute;
+  left: -40px;
+  bottom: 35px;
+}
+
+.profile-option {
+  height: 40px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 15px;
+  right: 20px;
+}
+.Edit {
+  border: 1px solid black;
+  padding: 4px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.main-content {
+  width: 100%;
+  padding: 30px 0px;
+  display: flex;
+}
+
+.left-side {
+  width: 300px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "poppins";
+  font-size: 14px;
+}
+
+.basic-information {
+  background: white;
+  padding: 30px;
+}
+
+.Reviews-image {
+  margin-top: 20px;
+  background: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.Reviews-image a {
+  text-decoration: none;
+  color: black;
+}
+.Reviews-image a:hover {
+  text-decoration: underline;
+}
+
+.right-side {
+  width: 800px;
+  background-color: white;
+  margin-left: 30px;
+  padding: 20px;
+}
+.nav {
+  width: 100%;
+  z-index: -1;
+  margin-top: -17px;
+  background: white;
+  font-family: "poppins";
+  font-size: 14px;
+}
+.nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  height: 40px;
+  background: #fff;
+  width: 40%;
+  /*box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);*/
+}
+.nav ul li {
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav ul li.active,
+.nav ul li:hover {
+  box-shadow: 0px -3px 0px rgba(288, 0, 70, 0.9) inset;
+}
+.profile-body {
+  width: 100%;
+  z-index: -1;
+}
+.tab {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+.tab h2 {
+  font-family: "PT SANS";
+  margin-top: 0;
+  color: grey;
+}
+.flex-container {
+  display: flex;
+  column-gap: 35px;
+  flex-wrap: wrap;
+  row-gap: 25px;
+}
+.card {
+  width: 250px;
+  height: 350px;
+  position: relative;
+  border: 1px solid grey;
+}
+.restau-image img {
+  width: 250px;
+  height: 150px;
+}
+.restau-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.restau-info .restau-name {
+  font-size: 14px;
+  font-family: "Bree Serif";
+}
+.restau-info .location {
+  font-size: 10px;
+  color: grey;
+  font-family: "poppins";
+}
+.price-range .price {
+  font-size: 16px;
+  font-family: "poppins";
+  color: darkgoldenrod;
+}
+.restau-rating {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-family: "bree Serif";
+}
+.ratings-stars i {
+  color: rgb(252, 163, 17);
+}
+.ratings-totals {
+  color: grey;
+}
+
+.ratings-stars {
+  margin-top: 0;
+  padding-top: 0;
+}
+.restau-bio {
+  font-size: 13px;
+  font-family: "poppins";
+  height: 50px;
+  padding: 0px 4px 0px;
+  text-align: start;
+  word-wrap: break-word;
+}
+
+.restau-delete {
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  width: 100%;
+  display: block;
+}
+.delete-button {
+  background: transparent;
+  border: none;
+  background: rgb(252, 163, 17);
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+.delete-button i {
+  color: black;
+}
+#see-more-bio,
+#see-less-bio {
+  color: blue;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+/*----------------------- Reviews AND RATINGS ------------------------------*/
+
+.reviews-section {
+  width: 700px;
+  height: calc(100% - 300px);
+  background-color: #f2f2f2;
+}
+.review-one {
+  background-color: white;
+  background: grey;
+  border: 1px solid lightgray;
+}
+.reviews-section-container {
+  background-color: #f2f2f2;
+  margin: 0%;
+  padding: 0%;
+}
+.profile-image {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 28px;
+}
+
+.profile-image .review-number {
+  margin-top: -10px;
+  font-size: 12px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.review-one .profile-name {
+  font-size: 13px;
+  font-family: "PT Sans", sans-serif;
+}
+.review-one {
+  padding: 15px 50px;
+  display: flex;
+  position: relative;
+}
+
+.date-stars-section span {
+  color: rgb(252, 163, 17);
+}
+
+.profile-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.date-stars-section {
+  display: flex;
+  position: relative;
+}
+
+.Review-date {
+  margin-top: 0px;
+  margin-left: 5px;
+  font-size: 12px;
+  font-family: "Bree Serif";
+}
+
+.review-content h3 {
+  margin-top: 0;
+  font-family: "Poppins";
+  font-size: 17px;
+  text-align: start;
+}
+.restau-name-review {
+  position: absolute;
+  top: -18px;
+  right: -10px;
+  font-family: "Pt Sans";
+  font-size: 13.5px;
+}
+.review-content p {
+  font-family: "Bree Serif";
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+.border-separator {
+  height: 2px;
+  width: 90%;
+  background-color: black;
+  margin: auto;
+}
+
+.box-rating-1 {
+  border: 1px solid black;
+  width: 50%;
+}
+
+.box-rating-2 {
+  border: 1px solid black;
+  width: 50%;
+}
+.box-container {
+  display: flex;
+  column-gap: 5px;
+}
+
+.box {
+  font-family: sans-serif;
+  padding: 5px;
+  color: antiquewhite;
+  background-color: coral;
+}
+
+.footer {
+  background-color: #26272b;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+.footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+.footer hr.small {
+  margin: 20px 0;
+}
+.footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+.footer a {
+  color: #737373;
+}
+.footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-links li {
+  display: block;
+}
+.footer-links a {
+  color: #737373;
+}
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links.inline li {
+  display: inline-block;
+}
+.footer .social-icons {
+  text-align: right;
+}
+.footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
+}
+.copyright-text {
+  margin: 0;
+}
+
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+.social-icons a {
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+.social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+.social-icons a.dribbble:hover {
+  background-color: #ea4c89;
+}
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+}
+.container-footer {
+  display: flex;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  font-family: "PT Sans";
+}
+
+.col-sm-12 {
+  width: 30%;
+  margin-left: 50px;
+}
+
+.col-xs-6 {
+  margin-right: 50px;
+  width: 20%;
+}
+
+.col-md-4 {
+  margin-left: 50px;
+}
+
+
